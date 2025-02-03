@@ -1,4 +1,4 @@
-package training;
+package kita_soft_koubou;
 
 public class Pitcher extends BaseballPlayer {
 	double era;

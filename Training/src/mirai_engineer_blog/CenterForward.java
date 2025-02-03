@@ -1,4 +1,4 @@
-package training2_12;
+package mirai_engineer_blog;
 
 public class CenterForward extends SoccerPlayer {
 	String POSITION_NAME = "センターフォワード";

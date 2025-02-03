@@ -1,4 +1,4 @@
-package training;
+package kita_soft_koubou;
 
 public class AlarmClock extends Clock{
 	private int alarmHour;

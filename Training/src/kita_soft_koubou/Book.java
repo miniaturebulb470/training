@@ -1,4 +1,4 @@
-package training;
+package kita_soft_koubou;
 
 public class Book {
 	private String title;

@@ -1,4 +1,4 @@
-package training;
+package kita_soft_koubou;
 
 public class Robot {
 	int id;

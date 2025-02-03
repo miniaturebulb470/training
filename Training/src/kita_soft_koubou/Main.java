@@ -1,6 +1,6 @@
-package training;
+package kita_soft_koubou;
 
-public class Training6_1 {
+public class Main {
 
 	public static void main(String[] args) {
 	

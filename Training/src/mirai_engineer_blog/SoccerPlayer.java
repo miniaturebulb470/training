@@ -1,4 +1,4 @@
-package training2_12;
+package mirai_engineer_blog;
 
 public abstract class SoccerPlayer {
 	private String name;
