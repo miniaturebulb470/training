@@ -9,14 +9,15 @@ public abstract class SoccerPlayer {
 		this.uniformNumber = uniformNumber;
 	}
 	public String getName() {return this.name;}
+	public int getUniformNumber() {return this.uniformNumber;}
 	public void kickBall() {
-		System.out.printf("%sはボールを蹴りました",getName());
+		System.out.printf("%sはボールを蹴りました%n",getName());
 	}
 	public void catchBall() {
-		System.out.printf("%sはボールを足で受け止めました",getName());
+		System.out.printf("%sはボールを足で受け止めました%n",getName());
 	}
 	abstract String getPositionName();
 	public String toString() {
-		return this.name + this.uniformNumber;
+		return this.name + "  背番号"+this.uniformNumber;
 	}
 }

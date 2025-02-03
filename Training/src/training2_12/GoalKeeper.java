@@ -9,13 +9,13 @@ public class GoalKeeper extends SoccerPlayer {
 	}
 
 	public void catchBall() {
-		System.out.printf("%sはボールを手で受け止めました",getName());
+		System.out.printf("%sはボールを手で受け止めました%n",getName());
 	}
 	String getPositionName() {
 		return this.POSITION_NAME;
 	}
 	public String toString() {
-		return this.POSITION_NAME + super.toString();
+		return this.POSITION_NAME +"  "+ super.toString();
 	}
 
 }

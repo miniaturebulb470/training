@@ -11,10 +11,7 @@ public class CenterForward extends SoccerPlayer {
 	public String getPositionName() {
 		return this.POSITION_NAME;
 	}
-	public void info() {
-		System.out.printf("名前 : %s%n", getName());
-		System.out.printf("No : %d%n", this.uniformNumber);
-		System.out.printf("POSITION_NAME : %s%n",this.POSITION_NAME);
+	public String toString() {
+		return this.POSITION_NAME +"  "+ super.toString();
 	}
-
 }

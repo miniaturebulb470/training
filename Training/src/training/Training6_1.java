@@ -1,12 +1,8 @@
 package training;
 
-import training2_12.CenterForward;
-
 public class Training6_1 {
 
 	public static void main(String[] args) {
-		CenterForward cf = new CenterForward("name",28);
-		cf.info();
 	
 	}
 
