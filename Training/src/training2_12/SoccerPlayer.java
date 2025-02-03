@@ -1,8 +1,8 @@
 package training2_12;
 
 public abstract class SoccerPlayer {
-	String name;
-	int uniformNumber;
+	private String name;
+	private int uniformNumber;
 	
 	public SoccerPlayer(String name, int uniformNumber) {
 		this.name = name;
@@ -16,7 +16,7 @@ public abstract class SoccerPlayer {
 		System.out.printf("%sはボールを足で受け止めました",getName());
 	}
 	abstract String getPositionName();
-//	public void toString() {
-//		
-//	}
+	public String toString() {
+		return this.name + this.uniformNumber;
+	}
 }
