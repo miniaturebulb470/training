@@ -4,8 +4,21 @@ public class Main2_15 {
 
 	public static void main(String[] args) {
 		Musician[] musicians = {
-				new 
+				new Vocalist("桜井"),
+				new Guiterist("田原", "リードギター"),
+				new Guiterist("中川","ベース"),
+				new ChrusDrummer("鈴木")
+		};
+		for(Musician m : musicians) {
+			if(m instanceof Singable) {
+				((Singable) m).sing();
+			}
+			if(m instanceof Playable p) {
+				p.Play();
+			}
 		}
+		
+		
 	}
 }
 
@@ -31,7 +44,7 @@ class Vocalist extends Musician implements Singable {
 	}
 
 	public void sing() {
-		System.out.printf("%sは熱唱しました！", this.name);
+		System.out.printf("%sは熱唱しました！%n", this.name);
 	}
 }
 
@@ -44,7 +57,7 @@ class Guiterist extends Musician implements Playable {
 	}
 
 	public void Play() {
-		System.out.printf("%sは%sを演奏しました！", this.name, this.typeGuiter);
+		System.out.printf("%sは%sを演奏しました！%n", this.name, this.typeGuiter);
 	}
 }
 
@@ -54,10 +67,10 @@ class ChrusDrummer extends Musician implements Singable, Playable {
 	}
 
 	public void sing() {
-		System.out.printf("%sはコーラスでハモりました！", this.name);
+		System.out.printf("%sはコーラスでハモりました！%n", this.name);
 	}
 	public void Play() {
-		System.out.printf("%sはドラムを演奏しました！", this.name);
+		System.out.printf("%sはドラムを演奏しました！%n", this.name);
 	}
 	
 
