@@ -10,25 +10,26 @@ public class CountAiueo {
 
 		System.out.printf("アルファベットを入力してください%n");
 		String message = scan.nextLine();
-		String message = message.toLowerCase();//文字を小文字に統一する
+		
+		String sMessage = message.toLowerCase();//文字を小文字に統一する
 
 		
 		
 		
-		for (int i = 0; i < messageS.length(); i++) {
-			if (messageS.charAt(i) == 'a') {
+		for (int i = 0; i < sMessage.length(); i++) {
+			if (sMessage.charAt(i) == 'a') {
 				counter++;
 			}
-			if (messageS.charAt(i) == 'i') {
+			if (sMessage.charAt(i) == 'i') {
 				counter++;
 			}
-			if (messageS.charAt(i) == 'u') {
+			if (sMessage.charAt(i) == 'u') {
 				counter++;
 			}
-			if (messageS.charAt(i) == 'e') {
+			if (sMessage.charAt(i) == 'e') {
 				counter++;
 			}
-			if (messageS.charAt(i) == 'o') {
+			if (sMessage.charAt(i) == 'o') {
 				counter++;
 			}
 		}
@@ -39,9 +40,9 @@ public class CountAiueo {
 		char[] c = { 'a', 'i', 'u', 'e', 'o' };
 		System.out.printf("%d%n", counter);
 		counter = 0;
-		for (int i = 0; i < messageS.length(); i++) {
+		for (int i = 0; i < sMessage.length(); i++) {
 			for (int j = 0; j < c.length; j++) {
-				if (messageS.charAt(i) == c[j]) {
+				if (sMessage.charAt(i) == c[j]) {
 					counter++;
 				}
 			}
