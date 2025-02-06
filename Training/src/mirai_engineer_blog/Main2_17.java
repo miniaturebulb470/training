@@ -1,5 +1,5 @@
 package mirai_engineer_blog;
-//
+
 public class Main2_17 {
 
 	public static void main(String[] args) {
