@@ -1,9 +1,9 @@
 package mirai_engineer_blog;
-
+//hennkou
 public class Main2_17 {
-
+	int a;
 	public static void main(String[] args) {
-        Car mycar = new Car(123, "ロミオ", 0.5);
+		Car mycar = new Car(123, "ロミオ", 0.5);
         try {
             while(true) {
                 // 走行する
